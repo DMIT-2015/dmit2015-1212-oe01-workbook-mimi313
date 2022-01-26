@@ -24,7 +24,7 @@ public class AlbertaCovid19CaseManager {
     }
     @Getter
     private List<AlbertaCovid19Case> albertaCovid19CaseList = new ArrayList<>();
-    private AlbertaCovid19CaseManager() throws IOException {
+    private AlbertaCovid19CaseManager() throws IOException { // Constructor
         try(var reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(
                 "/data/covid-19-alberta-statistics-data.csv")))) {
             String lineText;
