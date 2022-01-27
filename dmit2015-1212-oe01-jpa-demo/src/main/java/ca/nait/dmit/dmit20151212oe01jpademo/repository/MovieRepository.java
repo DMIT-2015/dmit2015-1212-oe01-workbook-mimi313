@@ -3,18 +3,18 @@ package ca.nait.dmit.dmit20151212oe01jpademo.repository;
 import java.util.List;
 import java.util.Optional;
 
-import ca.nait.dmit.dmit20151212oe01jpademo.entity.Movie;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
+import dmit2015.entity.Movie;
 
 @ApplicationScoped
 @Transactional
 public class MovieRepository {
 
-    @PersistenceContext(unitName = "h2database-jpa-pu")
+    @PersistenceContext(unitName = "hsqldatabase-jpa-pu")
     private EntityManager em;
 
     public void add(Movie newMovie) {
@@ -59,15 +59,15 @@ public class MovieRepository {
 
     public List<Movie> findAll() {
         return em.createQuery(
-                "SELECT m FROM Movie m "
-                , Movie.class)
+                        "SELECT m FROM Movie m "
+                        , Movie.class)
                 .getResultList();
     }
 
     public List<Movie> findAllOrderByTitle() {
         return em.createQuery(
-                "SELECT m FROM Movie m ORDER BY m.title"
-                , Movie.class)
+                        "SELECT m FROM Movie m ORDER BY m.title"
+                        , Movie.class)
                 .getResultList();
     }
 }
