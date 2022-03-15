@@ -1,4 +1,4 @@
-package dmit2015.entity;
+package ca.nait.dmit.dmit20151212oe01jpademo.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -40,9 +40,9 @@ public class Movie implements Serializable {
 
     @Column(nullable = false, length = 30)
     @NotBlank(message = "The field Genre is required.")
-    @Pattern(regexp = "^[A-Z]+[a-zA-Z]*$",  // Must only use letters.
+    @Pattern(regexp = "^[A-Z]+[a-zA-Z\\s]*$",  // Must only use letters.
             // The first letter is required to be uppercase. White space, numbers, and special characters are not allowed.
-            message = "The field Genre must match the regular expression '^[A-Z]+[a-zA-Z]*$'.")
+            message = "The field Genre must match the regular expression '^[A-Z]+[a-zA-Z\\s]*$'.")
     private String genre;
 
     @Column(nullable = false, length = 5)

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="dmit2015-1212-jaxrs-demo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="333ef949-ae22-4f02-bc5d-bc494d1498d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoItemResourceRequest.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helloworld.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/config/JAXRSConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/jpa/AbstractJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/validator/BeanValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dmit2015/entity/TodoItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dmit2015/repository/TodoItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dmit2015/resource/HelloWorldResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dmit2015/resource/TodoItemResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/import-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/glob2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dmit2015/repository/TodoItemRepositoryIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResource2RestAssuredIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResourceArquillianRestAssuredIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracle-hr-services/src/main/java/common/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracle-hr-services/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/main/java/ca/nait/dmit/dmit20151212oe01jpademo/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/main/java/ca/nait/dmit/dmit20151212oe01jpademo/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/main/java/ca/nait/dmit/dmit20151212oe01jpademo/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/main/java/ca/nait/dmit/dmit20151212oe01jpademo/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/test/java/ca/nait/dmit/dmit20151212oe01jpademo/repository/MovieRepositoryIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dmit2015-1212-oe01-jpa-demo/src/test/java/ca/nait/dmit/dmit20151212oe01jpademo/repository/MovieRepositoryIT.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="HTTP Request" />
+        <option value="DMIT2015 JPA Abstract Repository" />
+        <option value="DMIT2015 JPA Entity Repository" />
+        <option value="DMIT2015 BeanValidator" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24a4NsyjGfCfjLtak92qhRb6uDw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/dmit2015/resource" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dmit2015.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.0.0.Final">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JBoss/WildFly 26.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.0.0.Final" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/helloworld" />
+      <deployment>
+        <artifact name="dmit2015-1212-jaxrs-demo:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="43437" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="dmit2015-1212-jaxrs-demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="TodoItemRepositoryIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmit2015-1212-jaxrs-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dmit2015.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dmit2015.repository" />
+      <option name="MAIN_CLASS_NAME" value="dmit2015.repository.TodoItemRepositoryIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemResource2RestAssuredIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmit2015-1212-jaxrs-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dmit2015.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dmit2015.resource" />
+      <option name="MAIN_CLASS_NAME" value="dmit2015.resource.TodoItemResource2RestAssuredIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemResource2RestAssuredIT.shouldCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmit2015-1212-jaxrs-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dmit2015.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dmit2015.resource" />
+      <option name="MAIN_CLASS_NAME" value="dmit2015.resource.TodoItemResource2RestAssuredIT" />
+      <option name="METHOD_NAME" value="shouldCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemResource2RestAssuredIT.shouldListAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmit2015-1212-jaxrs-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dmit2015.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dmit2015.resource" />
+      <option name="MAIN_CLASS_NAME" value="dmit2015.resource.TodoItemResource2RestAssuredIT" />
+      <option name="METHOD_NAME" value="shouldListAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemResourceArquillianRestAssuredIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmit2015-1212-jaxrs-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dmit2015.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dmit2015.resource" />
+      <option name="MAIN_CLASS_NAME" value="dmit2015.resource.TodoItemResourceArquillianRestAssuredIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TodoItemResource2RestAssuredIT.shouldCreate" />
+        <item itemvalue="JUnit.TodoItemResource2RestAssuredIT.shouldListAll" />
+        <item itemvalue="JUnit.TodoItemRepositoryIT" />
+        <item itemvalue="JUnit.TodoItemResourceArquillianRestAssuredIT" />
+        <item itemvalue="JUnit.TodoItemResource2RestAssuredIT" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="333ef949-ae22-4f02-bc5d-bc494d1498d5" name="Changes" comment="" />
+      <created>1643855332853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643855332853</updated>
+      <workItem from="1643855335949" duration="3053000" />
+      <workItem from="1643859973699" duration="16517000" />
+      <workItem from="1644536172311" duration="24234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResource2RestAssuredIT.java</url>
+          <line>32</line>
+          <properties class="dmit2015.resource.TodoItemResource2RestAssuredIT" method="shouldListAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/dmit2015/resource/TodoItemResource2RestAssuredIT.java</url>
+          <line>60</line>
+          <properties class="dmit2015.resource.TodoItemResource2RestAssuredIT" method="shouldCreate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+### Send a POST request to start a batch job
+POST http://localhost:8080/dmit2015-1212-batch-demo-1.0-SNAPSHOT/webapi/batch-jobs/job
+
+### Check the batch job status for id 1
+GET http://localhost:8080/dmit2015-1212-batch-demo-1.0-SNAPSHOT/webapi/batch-jobs/1
+
+### Send request for number of EnforcementZoneCentre objects
+GET http://localhost:8080/dmit2015-1212-batch-demo-1.0-SNAPSHOT/webapi/EnforcementZoneCentres/count
+
+### Send request for the EnforcementZoneCentre with siteId of 261
+GET http://localhost:8080/dmit2015-1212-batch-demo-1.0-SNAPSHOT/webapi/EnforcementZoneCentres/261
+
+### Send request for all EnforcementZoneCentre objects
+GET http://localhost:8080/dmit2015-1212-batch-demo-1.0-SNAPSHOT/webapi/EnforcementZoneCentres
+
+

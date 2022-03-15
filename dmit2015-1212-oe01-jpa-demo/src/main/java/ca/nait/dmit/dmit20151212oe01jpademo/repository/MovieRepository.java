@@ -8,7 +8,7 @@ import jakarta.transaction.Transactional;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
-import dmit2015.entity.Movie;
+import ca.nait.dmit.dmit20151212oe01jpademo.entity.Movie;
 
 @ApplicationScoped
 @Transactional

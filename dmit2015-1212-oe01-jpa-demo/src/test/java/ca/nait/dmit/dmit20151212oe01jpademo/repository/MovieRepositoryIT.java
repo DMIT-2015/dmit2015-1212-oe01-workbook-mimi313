@@ -2,7 +2,7 @@ package ca.nait.dmit.dmit20151212oe01jpademo.repository;
 
 import ca.nait.dmit.dmit20151212oe01jpademo.repository.MovieRepository;
 import common.config.ApplicationConfig;
-import dmit2015.entity.Movie;
+import ca.nait.dmit.dmit20151212oe01jpademo.entity.Movie;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit5.ArquillianExtension;
@@ -34,7 +34,7 @@ public class MovieRepositoryIT {
     @Inject
     private MovieRepository _movieRepository;
 
-    static dmit2015.entity.Movie currentMovie;  // the Movie that is currently being added, find, update, or delete
+    static ca.nait.dmit.dmit20151212oe01jpademo.entity.Movie currentMovie;  // the Movie that is currently being added, find, update, or delete
 
     @Deployment
     public static WebArchive createDeployment() {
