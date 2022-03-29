@@ -2,11 +2,11 @@ package ca.nait.dmit.ejb;
 
 import common.ejb.EmailSessionBean;
 import jakarta.annotation.Resource;
-import jakarta.ejb.Schedule;
-import jakarta.ejb.Schedules;
-import jakarta.ejb.Singleton;
-import jakarta.ejb.Startup;
-import jakarta.ejb.Timer;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.BatchRuntime;
+import jakarta.batch.runtime.BatchStatus;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.ejb.*;
 import jakarta.inject.Inject;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
@@ -14,9 +14,11 @@ import java.util.logging.Logger;
 
 @Singleton                // Instruct the container to create a single instance of this EJB
 @Startup                // Create this EJB is created when this app starts
-public class AutomaticTimersBean {        // Also known as Calendar-Based Timers
+public class DemoTimersBean {        // Also known as Calendar-Based Timers
 
-        private Logger _logger = Logger.getLogger(AutomaticTimersBean.class.getName());
+//        private Logger _logger = Logger.getLogger(DemoTimersBean.class.getName());
+        @Inject
+        private Logger _logger;
 
         /**
          * Assuming you have define the following entries in your META-INF/microprofile-config.properties file
@@ -33,7 +35,7 @@ public class AutomaticTimersBean {        // Also known as Calendar-Based Timers
         </dependency>
          */
         @Inject
-    @ConfigProperty(name="ca.dmit2015.config.SYSADMIN_EMAIL", defaultValue = "")
+    @ConfigProperty(name="ca.dmit2015.config.SYSADMIN_EMAIL")
         private String mailToAddress;
 
         @Inject
@@ -66,9 +68,38 @@ public class AutomaticTimersBean {        // Also known as Calendar-Based Timers
                 sendEmail(timer);
         }
 
-//         @Schedule(second = "0", minute ="51", hour = "20", dayOfWeek = "Mon,Wed,Fri", month = "Jan-Apr", year = "2022", info ="DMIT2015-OE01 Meeting", persistent = false)
+        @Inject
+        @ConfigProperty(name = "enforcement.job.xml")
+        private String jobXmlFileName;
+
+        @Resource
+        private TimerService timerService;
+
+        @Timeout
+        public void checkBatchJobStatus(Timer timer) {
+            // Check the status of the batch job
+            long jobId = (long) timer.getInfo();
+            JobOperator jobOperator = BatchRuntime.getJobOperator();
+            JobExecution jobExecution = jobOperator.getJobExecution(jobId);
+
+            // Chancel the timer if the JobStatus is COMPLETED or FAILED
+            if (jobExecution.getBatchStatus() == BatchStatus.COMPLETED || jobExecution.getBatchStatus() == BatchStatus.FAILED) {
+                timer.cancel();
+            }
+        }
+
+//        @Schedule(second = "0", minute ="11", hour = "20", dayOfWeek = "Mon,Wed,Fri", month = "Jan-Apr", year = "2022", info ="DMIT2015-OE01 Meeting", persistent = false)
         public void dmit2015SectionOE01ClassNotifiation(Timer timer) {
                 sendEmail(timer);
+
+                // Start a bach job to import data from CSV file to SQL Server
+            JobOperator jobOperator = BatchRuntime.getJobOperator();
+            long jobId = jobOperator.start(jobXmlFileName, null);
+
+            // Schedule a timer to execute in 3 seconds and repeats every 30 seconds
+            timerService.createTimer(3000, 30000, jobId);
         }
+
+
 
 }

@@ -1,5 +1,7 @@
+GET http://localhost:8080/webapi/hello-world
+
 ### Send an email
-POST http://localhost:8080/dmit2015-1212-timer-demo/webapi/mail
+POST http://localhost:8080/webapi/mail
 Content-Type: application/json
 
 {
